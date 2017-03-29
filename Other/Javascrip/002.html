@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is a javascrip</title>
+</head>
+<body>
+<script>
+    var rrrr={
+        firstname: "gao",
+        secondname: "yao"
+    };
+    document.write("姓"+rrrr.firstname+"<br/>"+"名"+rrrr.secondname);
+</script>
+<br/>
+<script>
+    var list=new Array ();
+    list[0]="one";
+    list[1]="two";
+    list[2]="three"
+    for (i=0;i<list.length;i++)
+        document.write(
+            list[i]+"<br/>"
+        );
+</script>
+<button id="b1" onclick="bl('first','second')" >chick
+</button>
+<script>
+    function b1(one,two) {
+        alert (
+            "this"+one+two
+        );
+    }
+</script>
+</body>
+</html>

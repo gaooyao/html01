@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>JavaScript统计字符数</title>
+    <script language="javascript">
+        function CountWords(obj, show_id){
+            var fullStr = obj.value;
+            var charCount = fullStr.length;
+            var rExp = /[^A-Za-z0-9]/gi;
+            var spacesStr = fullStr.replace(rExp, ' ');
+            var cleanedStr = spacesStr + ' ';
+            do{
+                var old_str = cleanedStr;
+                cleanedStrcleanedStr = cleanedStr.replace(' ', ' ');
+            }while( old_str != cleanedStr );
+            var splitString = cleanedStr.split(' ');
+            document.getElementById(show_id).innerHTML=charCount;
+        }
+    </script>
+</head>
+<body>
+<form>
+    <textarea cols="40" rows="5" name="x" onkeyup="CountWords(this,'show')" />
+    </textarea>
+</form>
+<div id="show">0</div>
+</body>
+</html>

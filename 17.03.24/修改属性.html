@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is my first model</title>
+</head>
+<body>
+<p id="1" align="right"style="border:5px solid red "  >
+    sdfsfsf
+</p>
+<button onclick="act0()">点击</button>
+<script>
+    function act0() {
+        document.getElementById("1").align="lift";
+        document.getElementById("1").style.border="5px solid green";
+    };
+</script>
+<p id="2">
+    若隐若现若隐若现若隐若现若隐若现若隐若现
+</p>
+<button onclick="act1()">隐藏</button><button onclick="act2()">出现</button>
+<script>
+    function act1() {
+        document.getElementById("2").style.visibility='hidden';
+    };
+    function act2() {
+        document.getElementById("2").style.visibility='visible';
+    };
+</script>
+<div id="3" style="background-color: darkcyan;width: 400px;height:200px;" onmousedown="md(this)"onmouseup="mu(this)" >
+    点击
+</div>
+<script>
+    function md(obj) {
+    obj.style.backgroundColor="red"
+        obj.innerHTML="释放"
+    }
+    function mu(obj) {
+        obj.style.backgroundColor="darkcyan"
+        obj.innerHTML="按下"
+    }
+</script>
+<br/>
+<h1 onmouseover="style.color='red'" onmouseout="style.color='blue'">
+    鼠标移动上面
+</h1>
+<br/>
+<p id="4" onmouseout="d=new Date();this.innerHTML=d.getTime()">
+    鼠标移过
+</p>
+</body>
+</html>

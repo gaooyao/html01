@@ -1,0 +1,29 @@
+h1{
+    background-image: url(http://localhost:63342/test/HTML/bg.jpg);
+    background-repeat: no-repeat ;
+    background-position: 0 0 ;
+}
+h1.head1{
+    background-color: rebeccapurple; font-size: 60px;
+}
+h1.head2{
+    background-color: darkcyan; font-size: 40px; padding: 20px;
+    text-align: justify;
+    word-spacing: 30px;
+    text-decoration: line-through;
+    font-family: 方正舒体 ;
+    font-style: italic;
+}
+.art {
+    background-color: wheat;
+}
+#article1 {
+    background-color: darkcyan;
+}
+#art1 h3 {
+    background-color: rebeccapurple;
+    padding: 10px;
+}
+article.wenzi1 {
+    font-size: 30px;
+}

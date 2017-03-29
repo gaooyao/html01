@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is my first model</title>
+    <link rel="stylesheet" href="../17.03.29/1.css" type="text/css"/>
+    <style>
+        .blue{
+            color: red;
+            font-size: 100%;
+        }
+    </style>
+    <!--<script src="1.js" ></script>-->
+    <script src="../jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                $("#p1").toggleClass("blue");
+            });
+            $("#b2").click(function () {
+                $("#p1").css({"color":"yellow","font-size":"200%"})
+            });
+            $("#b3").click(function () {
+                var a="width是："+$(document).width()+"<br/>";
+                var b=a+"height是："+$(document).height();
+                $("#p1").html(b)
+            });
+            $("#b4").click(function () {
+                $("#p1").load("../001.jpg")
+            });
+        });
+    </script>
+</head>
+<body id="id1">
+<div id="head">
+    <h1>TITLE</h1>
+</div>
+<div id="page">
+    <div id="show1">
+        <p id="p1" style="border: 5px solid black ">zhe shi duan luo 1<br/>duanhasdjasfdjaskj</p>
+    </div>
+    <div id="input1">
+        <input id="in1"/>
+    </div>
+    <div id="action1">
+        <button id="b1" style=" position: absolute;left: 47px;top: 26px;">
+            按钮一
+        </button>
+        <button id="b2" style=" position: absolute;left: 273px;top: 26px;">
+            按钮二
+        </button>
+        <button id="b3" style=" position: absolute;left: 47px;top: 112px;">
+            按钮三
+        </button>
+        <button id="b4" style=" position: absolute;left: 273px;top: 112px;">
+            按钮四
+        </button>
+    </div>
+</div>
+<script>
+    function f2() {
+        var a = document.createElement("p2");
+        var b = document.createTextNode("this is new");
+        a.appendChild(b);
+
+        var c = document.getElementById("show1");
+        var d = document.getElementById("p3");
+        c.appendChild(a);
+    }
+</script>
+</body>
+</html>
